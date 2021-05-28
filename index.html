@@ -4,20 +4,23 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700;900&display=swap" rel="stylesheet"/>
     <link rel="stylesheet" href="css/style.css">
     <title>Proyecto</title>
 </head>
 <body>
-    <div class="wrapper">
-        <div class="menu">
-            <figure><img src="https://umg.edu.gt/assets/umg.png" alt="Logo UMG"></figure>
-            <h1>Aplicacion de gestion de memoria</h1>
-        </div>
+    <div class="menu">
+        <figure><img src="https://umg.edu.gt/assets/umg.png" alt="Logo UMG"></figure>
+        <h1>Aplicacion de gestion de memoria</h1>
+    </div>
+    <main class="contenedor seccion contenido-centrado">
+        <h2 class="fw-300 centrar-text">Llenar datos requeridos para operar</h2>
         <form action="">
             <fieldset>
               <legend>Configuracion Cache</legend>
               <label for="configuracion-cache">Tamaño de cache</label>
               <select name="" id="configuracion-cache">
+                  <option value=""disabled selected>--Seleccionar--</option>
                   <option value="megabyte">Megabyte</option>
                   <option value="gigabyte">Gigabyte</option>
                   <option value="bits">Bit</option>
@@ -25,9 +28,11 @@
                 </select>
             </fieldset>
             <fieldset>
-                <legend>Tamaño cache</legend>
-                <label for="tamanio-cache">Tamaño de cache</label>
+                <legend>Espacios direccionales</legend>
+                <label for="tamanio-cache">Tamaño espacios direccionales</label>
+                <p>Si no selecciona una opcion por defecto se configura 32 bits</p>
                 <select name="" id="tamanio-cache">
+                    <option value=""disabled selected>--Seleccionar--</option>
                     <option value="12">12 bits</option>
                     <option value="24">24 bits</option>
                     <option value="32">32 bits</option>
@@ -41,11 +46,18 @@
             <textarea name="" id="mensaje" cols="" rows=""></textarea>
         </fieldset>
         <input type="submit" value="Enviar" class="boton boton-verde" />
-        <div class="footer">
-            <p>Ingenieria en Sistemas</p>
-            <p>Andy Perez</p>
-            <p>Israel Santizo</p>
-        </div>
-    </div>
+        </form>
+    </main>
+        <footer class="site-footer seccion">
+            <div class="contenedor contenedor-footer">
+            <div>
+                <p class="nombre">Ingenieria en Sistemas</p>
+                <p class="nombre">Andy Perez</p>
+                <p class="nombre">Israel Santizo</p>
+                <p class="copyright">Todos los Derechos Reservados 2020 &copy;</p>
+            </div>
+            </div>
+        </footer>
+    <!-- <script src="js/main.js"></script> -->
 </body>
 </html>
