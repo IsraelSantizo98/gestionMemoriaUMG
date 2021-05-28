@@ -98,12 +98,12 @@ textarea {
     background-color: #333;
     margin: 0;
 }
-.nombre, .copyright {
-    margin: 0;
-    color: #fff;
-}
 .contenedor-footer {
     padding: 3rem 0;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-around;
+}
+.nombre, .copyright {
+    margin: 0;
+    color: #fff;
 }
