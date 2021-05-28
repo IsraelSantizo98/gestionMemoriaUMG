@@ -1,12 +1,53 @@
 :root{
     --backgroundMenu: #44BC89;
+    --colorBoton: #71b100;
+    --colorInput: #e1e1e1;
 }
-*{
-    margin: 0;
-    padding: 0;
+html {
+    /* Reset para rems 62.5% = 10px */
+    box-sizing: border-box;
+    font-size: 62.5%;
+}
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
+/*Generales*/
+h1 {
+    font-size: 3.8rem;
+}
+h2 {
+    font-size: 3.4rem;
+}
+.fw-300 {
+    font-weight: 300;
+}
+.centrar-texto {
+    text-align: center;
+}
+.boton {
+    color: #fff;
+    font-weight: 700;
+    text-decoration: none;
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    display: inline-block;
+    text-align: center;
+    border: none;
+}
+.boton:hover {
+    cursor: pointer;
+}
+.boton-verde {
+    background-color: var(--colorBoton);
+}
+body {
+    font-family: "Lato", sans-serif;
+    font-size: 1.6rem;
+    line-height: 2;
 }
 .wrapper{
-    display: grid;
     width: 100vw;
     height: 100vh;
 }
@@ -18,4 +59,51 @@
 }
 .menu img{
     width: 150px;
+}
+/*Textarea*/
+form p {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 2rem 0 0 0;
+}
+legend {
+    font-size: 2.4rem;
+    color: 333;
+}
+label {
+    display: block;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+input:not([type="submit"]),
+textarea,
+select {
+  padding: 1rem;
+  display: block;
+  width: 100%;
+  background-color: var(--colorInput);
+  margin-bottom: 2rem;
+  border: none;
+  border-radius: 1rem;
+  outline: none;
+}
+select {
+    appearance: none;
+}
+textarea {
+    height: 10rem;
+}
+/*Footer*/
+.site-footer {
+    background-color: #333;
+    margin: 0;
+}
+.nombre, .copyright {
+    margin: 0;
+    color: #fff;
+}
+.contenedor-footer {
+    padding: 3rem 0;
+    display: flex;
+    justify-content: space-between;
 }
