@@ -44,8 +44,65 @@
             <label for="mensaje">Texto</label>
             <!--name es para leerlo desde el backend, las cols y rows definirlas en css-->
             <textarea name="" id="mensaje" cols="" rows=""></textarea>
-            <input type="button" value="verificar" onclick="convertirHex()">
-            <p id="place"></p>
+            <input type="submit" value="Convertir" class="boton boton-verde" onclick="convertirHex()">
+            <div class="resultado-conversion">
+                <p id="place"></p>
+            </div>
+            <table>
+                <tr>
+                  <th>Hexadecimal</th>
+                  <th>Binario</th>
+                </tr>
+                <tr>
+                  <td id="hex"></td>
+                  <td>10011111010</td>
+                </tr>
+                <tr>
+                  <td>50</td>
+                  <td>000001110100</td>
+                </tr>
+              </table>
+        </fieldset>
+        <fieldset>
+            <legend>Procesar operacion</legend>
+            <label for="procesar-informacion">Escoja un tipo de operacion</label>
+            <select name="" id="procesar-informacion">
+                <option value="" disabled selected>--Seleccionar--</option>
+                <option value="mapped">Direct Mapped Cacehe</option>
+                <option value="way">Multi Way Cache</option>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>Resultado</legend>
+            <table>
+                <tr>
+                  <th>Hexadecimal</th>
+                  <th>TAG</th>
+                  <th>SET</th>
+                  <th>OFFSET</th>
+                  <th>R1</th>
+                  <th>R2</th>
+                  <th>R3</th>
+                </tr>
+                <tr>
+                  <td id="hex"></td>
+                  <td>0000</td>
+                  <td>10</td>
+                  <td>1001</td>
+                  <td>M</td>
+                  <td>M</td>
+                  <td>H</td>
+                </tr>
+                <tr>
+                  <td>50</td>
+                  <td>0001</td>
+                  <td>11</td>
+                  <td>1001</td>
+                  <td>M</td>
+                  <td>H</td>
+                  <td>H</td>
+                </tr>
+              </table>
         </fieldset>
         <input type="submit" value="Enviar" class="boton boton-verde" />
         </form>

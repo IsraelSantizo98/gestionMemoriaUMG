@@ -93,12 +93,30 @@ select {
 textarea {
     height: 10rem;
 }
+.resultado-conversion{
+    border-radius: 1rem;
+    text-align: center;
+    background-color: var(--colorInput);
+    width: 100%;
+}
+/*Table*/
+table{
+    width: 100%;
+}
+table, th, td{
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+th, td{
+    padding: 5px;
+}
 /*Footer*/
 .site-footer {
     background-color: #333;
     margin: 0;
 }
 .contenedor-footer {
+    margin: 10px 0 0 0 ;
     padding: 3rem 0;
     display: flex;
     justify-content: space-around;
