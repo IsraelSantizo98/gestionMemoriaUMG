@@ -125,3 +125,6 @@ th, td{
     margin: 0;
     color: #fff;
 }
+.resultado-conversion{
+    border: 1px solid black;
+}
