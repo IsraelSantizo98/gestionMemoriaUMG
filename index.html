@@ -40,27 +40,28 @@
                 </select>
             </fieldset>
             <fieldset>
-            <legend>Ingreso texto</legend>
-            <label for="mensaje">Texto</label>
-            <!--name es para leerlo desde el backend, las cols y rows definirlas en css-->
-            <textarea name="" id="mensaje" cols="" rows=""></textarea>
-            <input type="submit" value="Convertir" class="boton boton-verde" onclick="convertirHex()">
-            <div class="resultado-conversion">
-                <p id="place"></p>
-            </div>
-            <table>
-                <tr>
-                  <th>Hexadecimal</th>
-                  <th>Binario</th>
-                </tr>
-                <tr>
-                  <td id="hex"></td>
-                  <td>10011111010</td>
-                </tr>
-                <tr>
-                  <td>50</td>
-                  <td>000001110100</td>
-                </tr>
+              <legend>Ingreso texto</legend>
+              <label for="mensaje">Texto</label>
+              <!--name es para leerlo desde el backend, las cols y rows definirlas en css-->
+              <textarea name="" id="mensaje" cols="" rows=""></textarea>
+  
+              <label for="mensaje">Resultado</label>
+              <!--name es para leerlo desde el backend, las cols y rows definirlas en css-->
+              <textarea name="" id="resultado" ></textarea>
+  
+              <!--<input type="submit" value="Convertir" class="boton boton-verde" onclick="convertirHex()">-->
+              <a type="submit" class="boton boton-verde" onclick="convertirHex()">Convertir</a>
+  
+              <table id = "tableConvert">
+                  <tr>
+                    <th>Hexadecimal</th>
+                    <th>Binario</th>
+                  </tr>
+  
+                  <tr>
+                    <td id="hexTable"></td>
+                    <td id="binTable"></td>
+                  </tr>
               </table>
         </fieldset>
         <fieldset>
@@ -86,21 +87,21 @@
                 </tr>
                 <tr>
                   <td id="hex"></td>
-                  <td>0000</td>
-                  <td>10</td>
-                  <td>1001</td>
-                  <td>M</td>
-                  <td>M</td>
-                  <td>H</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
                 </tr>
                 <tr>
-                  <td>50</td>
-                  <td>0001</td>
-                  <td>11</td>
-                  <td>1001</td>
-                  <td>M</td>
-                  <td>H</td>
-                  <td>H</td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
+                  <td></td>
                 </tr>
               </table>
         </fieldset>
